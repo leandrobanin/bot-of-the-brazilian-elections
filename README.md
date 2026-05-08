@@ -70,10 +70,11 @@ graph LR
 Instalação
     Clone o repositório:
 
-Bash```
+Bash
+```
 **git clone [https://github.com/leandrobanin/bot-of-the-brazilian-elections.git](https://github.com/leandrobanin/bot-of-the-brazilian-elections.git)**
-**cd bot-of-the-brazilian-elections**```
-
+**cd bot-of-the-brazilian-elections**
+```
 **Configure as variáveis de ambiente:**
 **Crie um arquivo .env ou edite o application.yml com suas credenciais:**
 
