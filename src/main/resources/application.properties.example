@@ -1,0 +1,12 @@
+spring.application.name=botEleicoes
+
+server.port=8081
+
+bot.webhook-secret=YOUR_SECRET
+
+evolution.base-url=http://localhost:8080
+evolution.api-key=YOUR_API_KEY
+evolution.instance-name=politico-bot
+
+spring.ai.anthropic.api-key=YOUR_ANTHROPIC_KEY
+spring.ai.anthropic.chat.options.model=claude-sonnet-4-20250514
