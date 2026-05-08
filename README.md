@@ -73,8 +73,9 @@ Instalação
 Bash```
 **git clone [https://github.com/leandrobanin/bot-of-the-brazilian-elections.git](https://github.com/leandrobanin/bot-of-the-brazilian-elections.git)**
 **cd bot-of-the-brazilian-elections**```
-    └── **Configure as variáveis de ambiente:**
-    └── **Crie um arquivo .env ou edite o application.yml com suas credenciais:**
+
+**Configure as variáveis de ambiente:**
+**Crie um arquivo .env ou edite o application.yml com suas credenciais:**
 
 YAML
 ```
