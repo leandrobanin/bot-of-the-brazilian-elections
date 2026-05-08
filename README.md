@@ -1,7 +1,7 @@
 # 🗳️ Heitorzinho — Bot Raio-X Político com IA para WhatsApp
 
 [![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=springai)](https://spring.io/projects/spring-boot)
 [![Docker](https://img.shields.io/badge/Docker-Container-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
 [![Spring AI](https://img.shields.io/badge/Spring%20AI-Claude%20Sonnet-blueviolet?style=for-the-badge&logo=anthropic)](https://spring.io/projects/spring-ai)
 
