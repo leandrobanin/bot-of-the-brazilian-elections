@@ -1,7 +1,7 @@
-# 🗳️ Heitorzinho — Bot Raio-X Político com IA para WhatsApp
+# 🗳️ Heitorzinho — Bot Raio-X Político com IA para WhatsApp 🗳️
 
 [![Java](https://img.shields.io/badge/Java-17%2B-orange?style=for-the-badge&logo=java)](https://www.oracle.com/java/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=springai)](https://spring.io/projects/spring-boot)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-brightgreen?style=for-the-badge&logo=springboot)](https://spring.io/projects/spring-boot)
 [![Docker](https://img.shields.io/badge/Docker-Container-blue?style=for-the-badge&logo=docker)](https://www.docker.com/)
 [![Spring AI](https://img.shields.io/badge/Spring%20AI-Claude%20Sonnet-blueviolet?style=for-the-badge&logo=anthropic)](https://spring.io/projects/spring-ai)
 
@@ -9,7 +9,7 @@ O **Raio-X Político** é uma solução robusta de backend desenvolvida para aut
 
 ---
 
-## 🚀 Diferenciais Técnicos
+## Diferenciais Técnicos
 
 Este projeto foi construído seguindo as melhores práticas de desenvolvimento de software, focando em escalabilidade e manutenção:
 
@@ -20,7 +20,7 @@ Este projeto foi construído seguindo as melhores práticas de desenvolvimento d
 
 ---
 
-## 🏗️ Arquitetura do Sistema
+## Arquitetura do Sistema
 
 O fluxo de dados foi desenhado para ser resiliente e rápido:
 
@@ -32,47 +32,52 @@ graph LR
     AI -- Resposta --> App
     App -- Send Message --> Evo
     Evo -- WhatsApp --> User
+```
+---
 
-## 🛠️ Tecnologias Utilizadas
-Core: Java 17 & Spring Boot 3.x
+## Tecnologias Utilizadas
+```
+    ├── Core: Java 17 & Spring Boot 3.x
+    ├── Inteligência Artificial: Spring AI (Integração com Claude 3.5 Sonnet)
+    ├── Integração WhatsApp: Evolution API (v2)
+    ├── Banco de Dados: PostgreSQL (Persistência de logs e contextos)
+    ├── DevOps: Docker & Docker Compose
+    └── Ferramentas: Maven, Lombok, Jackson
+```
+---
 
-Inteligência Artificial: Spring AI (Integração com Claude 3.5 Sonnet)
+## Funcionalidades
+```
+    [x] Resposta em Tempo Real:** Interação fluída via WhatsApp.
 
-Integração WhatsApp: Evolution API (v2)
+    [x] Integração com LLM:** Respostas inteligentes baseadas em dados políticos.
 
-Banco de Dados: PostgreSQL (Persistência de logs e contextos)
+    [x] Gestão de Webhooks:** Endpoint pronto para receber e validar eventos da Evolution API.
 
-DevOps: Docker & Docker Compose
+    [x] Arquitetura Escalável:** Código modularizado por camadas (Controllers, Services, Repositories).
+```
+---
 
-Ferramentas: Maven, Lombok, Jackson
+## Como Rodar o Projeto
 
-✨ Funcionalidades
-[x] Resposta em Tempo Real: Interação fluída via WhatsApp.
+### Pré-requisitos
+**Docker e docker-compose instalados.**
 
-[x] Integração com LLM: Respostas inteligentes baseadas em dados políticos.
+**Uma chave de API da Anthropic (Claude) ou modelo configurado no Spring AI. (modelo pago, mas pode trocar também)**
 
-[x] Gestão de Webhooks: Endpoint pronto para receber e validar eventos da Evolution API.
-
-[x] Arquitetura Escalável: Código modularizado por camadas (Controllers, Services, Repositories).
-
-🔧 Como Rodar o Projeto
-Pré-requisitos
-Docker e Docker Compose instalados.
-
-Uma chave de API da Anthropic (Claude) ou modelo configurado no Spring AI.
-
-Instância da Evolution API rodando.
+**Instância da Evolution API rodando.**
 
 Instalação
-Clone o repositório:
+    Clone o repositório:
 
-Bash
-git clone [https://github.com/leandrobanin/bot-of-the-brazilian-elections.git](https://github.com/leandrobanin/bot-of-the-brazilian-elections.git)
-cd bot-of-the-brazilian-elections
-Configure as variáveis de ambiente:
-Crie um arquivo .env ou edite o application.yml com suas credenciais:
+Bash```
+**git clone [https://github.com/leandrobanin/bot-of-the-brazilian-elections.git](https://github.com/leandrobanin/bot-of-the-brazilian-elections.git)**
+**cd bot-of-the-brazilian-elections**```
+    └── **Configure as variáveis de ambiente:**
+    └── **Crie um arquivo .env ou edite o application.yml com suas credenciais:**
 
 YAML
+```
 spring:
   ai:
     anthropic:
@@ -81,20 +86,26 @@ evolution:
   api:
     url: ${EVOLUTION_URL}
     key: ${EVOLUTION_KEY}
-Suba os containers:
-
+```
+**Suba os containers:**
+```
 Bash
 docker-compose up -d
-O servidor estará rodando em: http://localhost:8080
+```
+**O servidor estará rodando em: ```http://localhost:8080```**
 
-📂 Estrutura de Pastas (Principais)
+## Estrutura de Pastas (Principais)
+```
 Plaintext
 src/main/java/com/projeto
-├── config/         # Configurações de Bean, Async e AI
-├── controller/     # Endpoints de Webhook
-├── dto/            # Objetos de transferência de dados (Request/Response)
-├── service/        # Lógica de integração com AI e Evolution API
-└── repository/     # Interface de persistência
-👨‍💻 Autor
+    ├── config/         # Configurações de Bean, Async e AI
+    ├── controller/     # Endpoints de Webhook
+    ├── dto/            # Objetos de transferência de dados (Request/Response)
+    ├── service/        # Lógica de integração com AI e Evolution API
+    └── repository/     # Interface de persistência
+```
+
+## Autor
+
 Leandro Augusto Banin
-Fullstack Jr. Developer | Systems of Information Student
+Jr. Engineer Software | Information Technology Student
